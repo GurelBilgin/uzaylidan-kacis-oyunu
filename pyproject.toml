@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uzaylidan-kacis-oyunu"
+version = "1.0.0"
+description = "Tkinter tabanli harf tahmin oyunu"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pygame>=2.5.0"
+]
+
+[project.scripts]
+uzaylidan-kacis = "uzaylidan_kacis_oyunu.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+uzaylidan_kacis_oyunu = [
+    "assets/*.txt",
+    "assets/*.wav",
+    "assets/*.ico"
+]
