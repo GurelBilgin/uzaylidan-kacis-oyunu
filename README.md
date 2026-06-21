@@ -104,6 +104,18 @@ python -m unittest discover -s tests -v
 
 Testler, oyun mantığının arayüzden bağımsız olarak doğru çalıştığını kontrol eder.
 
+## Windows EXE
+
+Windows kullanıcıları için hazır `.exe` dosyası GitHub Releases bölümünde paylaşılmıştır.
+
+İndirmek için projenin sağ tarafındaki **Releases** bölümünden son sürüm dosyasını indirebilirsiniz.
+
+Skor dosyası EXE'nin bulunduğu klasöre yazılmaz. Windows üzerinde skorlar kullanıcı veri klasöründe saklanır:
+
+```text
+%APPDATA%\UzaylidanKacisOyunu\scores.txt
+```
+
 ## Windows EXE Oluşturma
 
 Windows kullanıcıları için uygulama PyInstaller ile tek dosyalık `.exe` hâline getirilebilir.
