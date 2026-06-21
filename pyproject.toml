@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "uzaylidan-kacis-oyunu"
-version = "1.0.0"
+version = "1.0.1"
 description = "Tkinter tabanli harf tahmin oyunu"
 readme = "README.md"
 requires-python = ">=3.10"

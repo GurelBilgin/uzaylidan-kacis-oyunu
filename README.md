@@ -13,7 +13,7 @@ Proje ilk hâlindeki tek dosyalı yapıdan çıkarılarak modüler, test edilebi
 - Tuzak harflerde ekstra hata cezası
 - Tek kullanımlık ipucu hakkı
 - Kazanma ve kaybetme durumları
-- Skorları `scores.txt` dosyasında saklama
+- Skorları kullanıcıya özel uygulama veri klasöründe saklama
 - Oyun içi ses efektleri
 - Uygulama ikonu
 - Modüler ve test edilebilir oyun mantığı
@@ -80,6 +80,19 @@ uzaylidan-kacis
 6. Her tahmin için süre sınırı vardır. Süre dolarsa hata sayısı artar.
 7. Oyuncunun bir kez ipucu alma hakkı vardır.
 8. Cümle tamamlanırsa oyun kazanılır; hata hakkı dolarsa oyun kaybedilir.
+
+
+## Skor Dosyasının Konumu
+
+Oyun skorları EXE dosyasının bulunduğu klasöre yazılmaz. Kullanıcı oyunu doğrudan indirip çalıştırdığında `dist/` veya indirme klasöründe `scores.txt` oluşmaması için skor dosyası kullanıcıya özel uygulama veri klasöründe tutulur.
+
+Windows için varsayılan konum:
+
+```text
+%APPDATA%\UzaylidanKacisOyunu\scores.txt
+```
+
+Bu sayede uygulama `Program Files`, masaüstü veya indirilenler klasörü gibi farklı yerlerden çalıştırılsa bile skor kayıtları düzenli ve güvenli bir konumda saklanır.
 
 ## Testler
 
